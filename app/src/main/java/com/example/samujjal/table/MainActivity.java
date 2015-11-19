@@ -19,16 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        toolbar.setTitle("My App Portfolio");
 
         Button btn = (Button)findViewById(R.id.btnSpotifyStreamer);
         btn.setOnClickListener(this);
@@ -41,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn = (Button)findViewById(R.id.btnXYZReader);
         btn.setOnClickListener(this);
         btn = (Button)findViewById(R.id.btnCapstone);
-        btn.setOnClickListener(this);
+        btn.setOnClickListener(this);   
     }
 
     @Override
